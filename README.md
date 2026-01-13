@@ -14,7 +14,7 @@ EWDGroup 11
 This project is a fullstack application that transforms raw Mobile Money (MoMo) SMS data into clear, actionable insights. It takes XML messages, cleans and organizes the data, categorizes transactions, and stores everything in a relational database. The final result is an interactive dashboard that makes it easy to explore, analyze, and understand MoMo transaction patterns — helping users make sense of their data quickly and effectively.
 
 ## Project Structure:
-
+```
 mobile-money-app/
 │
 ├── frontend/
@@ -69,6 +69,7 @@ mobile-money-app/
     │
     ├── package.json
     └── README.md
+```
 
 ## System Architecture
 Our system shows a clear flow of MoMo SMS data from start to finish. Raw XML messages first go through an ETL pipeline where they are parsed, cleaned, and categorized. The structured data is then stored in a relational database, and finally, the dashboard pulls this data to create interactive visualizations. This design ensures that every transaction can be tracked, analyzed, and understood quickly and reliably.
