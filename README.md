@@ -15,49 +15,46 @@ This project is a fullstack application that transforms raw Mobile Money (MoMo) 
 
 ## Project Structure:
 
-mobile-money-app/          
-│
-├── frontend/             
-│   ├── index.html         
-│   ├── dashboard.html    
-│   ├── send-money.html    
-│   ├── pay-merchant.html  
-│   ├── transactions.html  
-│   ├── css/              
+mobile-money-app/
+├── frontend/
+│   ├── index.html
+│   ├── dashboard.html
+│   ├── send-money.html
+│   ├── pay-merchant.html
+│   ├── transactions.html
+│   ├── css/
 │   │   └── styles.css
-│   ├── js/                 
-│   │   ├── api.js         
-│   │   ├── auth.js        
-│   │   ├── wallet.js      
-│   │   ├── transaction.js 
-│   │   └── ui.js         
-│   └── assets/          
-│
-├── backend/               
+│   └── js/
+│       ├── api.js
+│       ├── auth.js
+│       ├── wallet.js
+│       ├── transaction.js
+│       └── ui.js
+├── assets/
+├── backend/
 │   ├── src/
-│   │   ├── controllers/    
+│   │   ├── controllers/
 │   │   │   ├── authController.js
 │   │   │   ├── walletController.js
 │   │   │   └── transactionController.js
-│   │   ├── services/       
+│   │   ├── services/
 │   │   │   ├── authService.js
 │   │   │   ├── walletService.js
 │   │   │   └── transactionService.js
-│   │   ├── models/         
+│   │   ├── models/
 │   │   │   ├── User.js
 │   │   │   ├── Wallet.js
 │   │   │   └── Transaction.js
-│   │   ├── routes/         
+│   │   ├── routes/
 │   │   │   ├── authRoutes.js
 │   │   │   ├── walletRoutes.js
 │   │   │   └── transactionRoutes.js
-│   │   ├── middleware/     
-│   │   └── app.js          
-│   ├── config/             
+│   │   ├── middleware/
+│   │   └── app.js
+│   ├── config/
 │   │   └── db.js
-│   ├── package.json        
+│   ├── package.json
 │   └── README.md
-│
 └── README.md
 
 ## System Architecture
