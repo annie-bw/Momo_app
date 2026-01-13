@@ -16,46 +16,59 @@ This project is a fullstack application that transforms raw Mobile Money (MoMo) 
 ## Project Structure:
 
 mobile-money-app/
+│
 ├── frontend/
 │   ├── index.html
 │   ├── dashboard.html
 │   ├── send-money.html
 │   ├── pay-merchant.html
 │   ├── transactions.html
+│   │
 │   ├── css/
 │   │   └── styles.css
+│   │
 │   └── js/
 │       ├── api.js
 │       ├── auth.js
 │       ├── wallet.js
 │       ├── transaction.js
 │       └── ui.js
+│
 ├── assets/
-├── backend/
-│   ├── src/
-│   │   ├── controllers/
-│   │   │   ├── authController.js
-│   │   │   ├── walletController.js
-│   │   │   └── transactionController.js
-│   │   ├── services/
-│   │   │   ├── authService.js
-│   │   │   ├── walletService.js
-│   │   │   └── transactionService.js
-│   │   ├── models/
-│   │   │   ├── User.js
-│   │   │   ├── Wallet.js
-│   │   │   └── Transaction.js
-│   │   ├── routes/
-│   │   │   ├── authRoutes.js
-│   │   │   ├── walletRoutes.js
-│   │   │   └── transactionRoutes.js
-│   │   ├── middleware/
-│   │   └── app.js
-│   ├── config/
-│   │   └── db.js
-│   ├── package.json
-│   └── README.md
-└── README.md
+│
+└── backend/
+    │
+    ├── src/
+    │   │
+    │   ├── controllers/
+    │   │   ├── authController.js
+    │   │   ├── walletController.js
+    │   │   └── transactionController.js
+    │   │
+    │   ├── services/
+    │   │   ├── authService.js
+    │   │   ├── walletService.js
+    │   │   └── transactionService.js
+    │   │
+    │   ├── models/
+    │   │   ├── User.js
+    │   │   ├── Wallet.js
+    │   │   └── Transaction.js
+    │   │
+    │   ├── routes/
+    │   │   ├── authRoutes.js
+    │   │   ├── walletRoutes.js
+    │   │   └── transactionRoutes.js
+    │   │
+    │   ├── middleware/
+    │   │
+    │   └── app.js
+    │
+    ├── config/
+    │   └── db.js
+    │
+    ├── package.json
+    └── README.md
 
 ## System Architecture
 Our system shows a clear flow of MoMo SMS data from start to finish. Raw XML messages first go through an ETL pipeline where they are parsed, cleaned, and categorized. The structured data is then stored in a relational database, and finally, the dashboard pulls this data to create interactive visualizations. This design ensures that every transaction can be tracked, analyzed, and understood quickly and reliably.
