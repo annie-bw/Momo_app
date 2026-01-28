@@ -130,7 +130,7 @@ https://trello.com/invite/b/695f7dab1a7f3e0ef4ed2837/ATTI8340ae06d57b824db6db942
 **Team Task Sheet:**
 https://docs.google.com/spreadsheets/d/1v6c1eUs7eQmv3dhxRfXT5hWDpmdh2LkHzjc6Xtq4Iwg/edit?usp=sharing
 
-**AI USAGE LOG: **
+## AI USAGE LOG:
 https://chatgpt.com/share/697a6d28-6e94-8008-9559-6fe1784eff08
 
 
