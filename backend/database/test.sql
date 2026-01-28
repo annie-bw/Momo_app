@@ -51,3 +51,24 @@ DELETE FROM system_logs
 WHERE action = 'LOGOUT';
 
 SELECT * FROM system_logs;
+
+
+-- =========================
+-- TRANSACTIONS TABLE CRUD TESTING
+-- =========================
+
+INSERT INTO transactions (fin_trans_id, amount, fees, trans_cat_id) VALUES
+('78654326', 2000.00, 0.00, 20),
+('78654327', 150.00, 0.00, 21),
+('78654328', 5000.00, 0.00, 22),
+('78654329', 1200.00, 0.00, 23),
+('78654330', 300.00, 0.00, 24);
+
+select * from transactions;
+
+UPDATE transactions
+SET amount = 3500.00
+WHERE fin_trans_id = '78654322';
+
+DELETE FROM transactions
+WHERE fin_trans_id = '78654321';

@@ -22,23 +22,3 @@ create index createdAt_ix
 create index trans_cat_idx
     on transactions (trans_cat_id);
 
-
-INSERT INTO transaction_category (name) VALUES
-('Refund'),
-('Cashback'),
-('Loan Payment'),
-('Purchase'),
-('Subscription');
-
-select * from transactions;
-
-INSERT INTO transactions (fin_trans_id, amount, fees, trans_cat_id) VALUES
-('78654326', 2000.00, 0.00, 20),
-('78654327', 150.00, 0.00, 21),
-('78654328', 5000.00, 0.00, 22),
-('78654329', 1200.00, 0.00, 23),
-('78654330', 300.00, 0.00, 24);
-
-UPDATE transactions
-SET amount = 3500.00
-WHERE fin_trans_id = '78654322';
