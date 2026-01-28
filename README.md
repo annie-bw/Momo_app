@@ -90,6 +90,9 @@ The schema includes several core tables that work together to model the MoMo tra
 
 All tables were created using appropriate MySQL data types and constraints to ensure reliable storage and efficient querying. Sample data was inserted into the tables to support testing and validation of the schema.
 
+Detailed ERD diagram documentation: 
+(https://docs.google.com/document/d/1tcv8DqO6Q7O7vhTwyXjPa_hv7Dpw_l-Rdkd6DTT2s-U/edit?usp=sharing)
+
 **SQL Setup Script:**
 database/defaultdb.sql
 
