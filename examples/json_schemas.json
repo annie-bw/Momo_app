@@ -1,0 +1,78 @@
+{
+  "users_example": {
+    "user_id": 1,
+    "full_name": "Amina Tumukunde",
+    "phone_number": "0781234567",
+    "role_id": 3
+  },
+
+  "roles_example": [
+    {
+      "role_id": 1,
+      "role_name": "admin"
+    },
+    {
+      "role_id": 2,
+      "role_name": "agent"
+    },
+    {
+      "role_id": 3,
+      "role_name": "customer"
+    }
+  ],
+
+  "transaction_categories_example": {
+    "category_id": 2,
+    "category_name": "Transfer"
+  },
+
+  "transactions_example": {
+    "transaction_id": 101,
+    "amount": 15000,
+    "transaction_date": "2026-01-22T14:35:00",
+    "category_id": 2
+  },
+
+  "transaction_participants_example": {
+    "transaction_id": 101,
+    "user_id": 1,
+    "participant_role": "sender"
+  },
+
+  "system_logs_example": {
+    "log_id": 12,
+    "action": "Transaction Processed",
+    "timestamp": "2026-01-22T14:35:05",
+    "performed_by": 1
+  },
+
+  "complex_transaction_example": {
+    "transaction_id": 101,
+    "amount": 15000,
+    "transaction_date": "2026-01-22T14:35:00",
+    "category": {
+      "category_id": 2,
+      "category_name": "Transfer"
+    },
+    "participants": [
+      {
+        "user_id": 1,
+        "full_name": "John Doe",
+        "phone_number": "0781234567",
+        "role": "customer",
+        "transaction_role": "sender"
+      },
+      {
+        "user_id": 2,
+        "full_name": "Jane Smith",
+        "phone_number": "0799876543",
+        "role": "customer",
+        "transaction_role": "receiver"
+      }
+    ],
+    "system_log": {
+      "action": "Transaction Processed",
+      "timestamp": "2026-01-22T14:35:05"
+    }
+  }
+}
